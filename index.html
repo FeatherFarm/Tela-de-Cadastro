@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img-logo/logo 2.png">
+    <link rel="icon" type="image/x-icon" href="../PagInicial/imagens_e_fontes/logo.png">
 
     <title>Cadastro</title>
 </head>
 
 <body>
     <div class="container">
-        <form action="" class="form">
+        <form action="../TelaLogin/login_page.html" class="form">
             <h1 class="text-center">Cadastro</h1>
             <!-- barra de progresso -->
             <div class="progressbar">
@@ -29,8 +29,14 @@
             <!-- final da barra de progresso-->
             <div class="form-step form-step-active">
                 <div class="input-group">
-                    <label for="nome_empresa">NOME DA EMPRESA <b style="color: red;" title="Este campo é obrigatório">*</b></label>
-                    <input id="input_empresa" autocomplete="off" type="text" name="empresa" placeholder="Empresa" required="required"
+                    <label for="nome_razão_social">RAZÃO SOCIAL <b style="color: red;" title="Este campo é obrigatório">*</b></label>
+                    <input id="input_razão_social" autocomplete="off" type="text" name="razão_social" placeholder="Exemple: Feather Farm" required="required"
+                        minlength="2" maxlength="50">
+                </div>
+
+                <div class="input-group">
+                    <label for="nome_fantasia">Nome fantasia <b style="color: red;" title="Este campo é obrigatório">*</b></label>
+                    <input id="input_nome_fantasia" autocomplete="off" type="text" name="nome_fantasia" placeholder="Exemple: Feather Farm" required="required" 
                         minlength="2" maxlength="50">
                 </div>
 
@@ -41,15 +47,9 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="Site">SITE </label>
-                    <input id="input_site" autocomplete="off" type="text" name="site" placeholder="www.exemple.com.br"  minlength="2"
-                        maxlength="50">
-                </div>
-
-                <div class="input-group">
                     <label for="Senha">SENHA <b style="color: red;" title="Este campo é obrigatório" >*</b></label>
                     <input id="input_senha" autocomplete="off" type="password" name="senha" placeholder="********"
-                        required="required" minlength="3" maxlength="8">
+                        required="required"  maxlength="8">
                 </div>
 
                 <div class="">
@@ -72,9 +72,15 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="numero_endereco">NUMERO <b style="color: red;" title="Este campo é obrigatório">*</b></label>
-                    <input id="input_numero" autocomplete="off" type="text" name="numero" placeholder="12345" required="required"
+                    <label for="numero_endereco">Nº <b style="color: red;" title="Este campo é obrigatório">*</b></label>
+                    <input id="input_numero" autocomplete="off" type="text" name="numero" placeholder="Exemple: 12345" required="required"
                         minlength="1" maxlength="5">
+                </div>
+                
+                <div class="input-group">
+                    <label for="Bairro_endereco">BAIRRO <b style="color: red;" title="Este campo é obrigatório">*</b></label>
+                    <input id="input_bairro" autocomplete="off" type="text" name="bairro" placeholder="Bairro" required="required" min="2"
+                        maxlength="50">
                 </div>
 
                 <div class="btns-group">
@@ -121,14 +127,20 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="Bairro_endereco">BAIRRO <b style="color: red;" title="Este campo é obrigatório">*</b></label>
-                    <input id="input_bairro" autocomplete="off" type="text" name="bairro" placeholder="Bairro" required="required" min="2"
-                        maxlength="50">
-                </div>
-
-                <div class="input-group">
                     <label for="Cidade">CIDADE <b style="color: red;" title="Este campo é obrigatório">*</b></label>
                     <input id="input_cidade" autocomplete="off" type="text" name="cidade" placeholder="Exemple: São Paulo" required="required" min="2"
+                        maxlength="50">
+                </div>
+                
+                <div class="input-group">
+                    <label for="Nome_responsavel">NOME <b style="color: red;" title="Este campo é obrigatório">*</b></label>
+                    <input id="input_nome" autocomplete="off" type="text" name="nome" placeholder="Responsável pelo cadastro" required="required" min="2"
+                        maxlength="50">
+                </div>
+                
+                <div class="input-group">
+                    <label for="Sobrenome_responsavel">SOBRENOME <b style="color: red;" title="Este campo é obrigatório">*</b></label>
+                    <input id="input_sobrenome" autocomplete="off" type="text" name="sobrenome" placeholder="Responsável pelo cadastro" required="required" min="2"
                         maxlength="50">
                 </div>
 
@@ -142,13 +154,13 @@
                 <div class="input-group">
                     <label for="Email">EMAIL <b style="color: red;" title="Este campo é obrigatório">*</b></label>
                     <input id="input_email" autocomplete="off" type="email" name="email"
-                        placeholder="Exemple@exemple.com" required="required" minlength="5" maxlength="50">
+                        placeholder="Exemple@exemple.com" required="required" minlength="3" maxlength="50">
                 </div>
 
                 <div class="input-group">
                     <label for="Email2">EMAIL (2)</label>
                     <input id="input_email2" autocomplete="off" type="email" name="email2"
-                        placeholder="Exemple@exemple.com" minlength="5" maxlength="50">
+                        placeholder="Exemple@exemple.com" minlength="3" maxlength="50">
                 </div>
 
                 <div class="input-group">
@@ -171,7 +183,7 @@
         </form>
 
         <div class="form-image">
-            <div class="image-logo"><a href="#" id="img_logo">
+            <div class="image-logo"><a href="../PagInicial/index.html" id="img_logo">
                 <img src="img-logo/logo 2.png" alt="img logo">
             </a></div>
             <div class="image-farm">
@@ -286,29 +298,12 @@
         }
     })
 
-    // ---------- Validações ----------
-
-    // function Validacao1() {
-    //     var Empresa = input_empresa.value;
-    //     var Cnpj = input_cnpj.value;
-    //     var Site = input_site.value;
-    //     var Senha = input_senha.value;
-    //     if (Empresa == false || Empresa.length < 2) {
-    //         alert("Parece que você preencheu algum campo incorretamente!")
-    //     } else if (Cnpj == false || Cnpj.length < 18 ) {
-    //         alert("Parece que você preencheu algum campo incorretamente!")
-    //     } else if (Site == false || Site.length < 2) {
-    //         alert("Parece que você preencheu algum campo incorretamente!")
-    //     } else if (Senha == false || Senha.length < 3) {
-    //         alert("Parece que você preencheu algum campo incorretamente!")
-    //     }
-    // }
 
 
     function Validacao() {
-        var Empresa = input_empresa.value;
+        var Empresa = input_razão_social.value;
         var Cnpj = input_cnpj.value;
-        var Site = input_site.value;
+        var Nome_fantasia = input_nome_fantasia.value;
         var Senha = input_senha.value;
         var Logradouro = input_logradouro.value;
         var Numero = input_numero.value;
@@ -316,6 +311,8 @@
         var Uf = select_uf.value;
         var Cep = input_cep.value;
         var Cidade = input_cidade.value;
+        var Nome = input_nome.value;
+        var Sobrenome = input_sobrenome.value;
         var Email = input_email.value;
         var Email2 = input_email2.value;
         var Telefone = input_telefone.value;
@@ -326,9 +323,9 @@
             alert("Parece que você preencheu algum campo incorretamente!")
         } else if (Cnpj == false || Cnpj.length < 18 ) {
             alert("Parece que você preencheu algum campo incorretamente!")
-        } else if (Site == false || Site.length < 2) {
+        } else if (Nome_fantasia == false || Nome_fantasia.length < 2) {
             alert("Parece que você preencheu algum campo incorretamente!")
-        } else if (Senha == true && Senha.length < 3) {
+        } else if ((Senha == false || Senha == true) && Senha.length < 3) {
             alert("Parece que você preencheu algum campo incorretamente!")
         } else if (Logradouro == false || Logradouro.length < 5) {
             alert("Parece que você preencheu algum campo incorretamente!")
@@ -342,6 +339,10 @@
             alert("Parece que você preencheu algum campo incorretamente!")
         } else if (Cidade == false || Cidade.length < 2) {
             alert("Parece que você preencheu algum campo incorretamente!")
+        } else if (Nome == false || Nome.length < 2) {
+            alert("Parece que você preencheu algum campo incorretamente!")
+        } else if (Sobrenome == false || Sobrenome.length < 2) {
+            alert("Parece que você preencheu algum campo incorretamente!")
         } else if (Email == false || Email.length < 5) {
             alert("Parece que você preencheu algum campo incorretamente!")
         } else if (Telefone == false || Telefone.length < 13) {
@@ -351,19 +352,9 @@
         } else if (Email2 == true && Email2.length < 5) {
             alert("Parece que você preencheu algum campo incorretamente!")
         }
-
-        if (Empresa == true && Empresa.length >= 2 &&
-             Cnpj == true && Cnpj.length == 18 &&
-             Senha == true && Senha.length >= 3 &&
-             Logradouro == true && Logradouro.length >= 5 &&
-             Numero == true && Numero.length >= 1 &&
-             Bairro == true && Bairro.length >= 2 &&
-             Uf == true && 
-             Cep == true && Cep.length == 9 &&
-             Cidade == true && Cidade.length >= 2 &&
-             Email == true && Email.length >= 5 &&
-             Telefone == true && Telefone.length == 13) {
-         }
+        
+        
+        
         
     }
 </script>
